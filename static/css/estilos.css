@@ -1,0 +1,69 @@
+.boton-circulo{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.boton-circulo:hover{
+    transform: translateY(10px);
+    -ms-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    -o-transform:scale(0.8);
+    -webkit-transition: all 500ms;
+}
+
+.fondo1{
+    width:auto;
+    height:100%;
+    background-image:url('/static/img/dunas.png');
+    background-size: contain;
+    position:relative;
+    background-repeat: no-repeat;
+}
+
+#caja-intendente{
+
+    width:30%;
+    height:15%;
+    background:#4A88F4;
+    color:#fff;
+    font-size:30px;
+    position:fixed;
+    left:45%;
+}
+
+div.noticias{
+    display: inline-block;
+    justify-content:center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left:20px;
+    margin-right:20px;
+    position:relative;
+}
+
+div.noticias div{
+    width:400px;
+}
+
+div.noticias div div.desc{
+    background-color:#ffffff;
+    padding:10px;
+}
+
+div.noticias div img{
+    width:100%;
+    position:relative;
+}
+
+div.noticias div h1{
+    font-size:20px;
+    color:#000;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+
+
