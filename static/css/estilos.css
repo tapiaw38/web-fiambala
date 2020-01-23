@@ -4,7 +4,6 @@
 }
 
 .boton-circulo:hover{
-    transform: translateY(10px);
     -ms-transform:scale(0.8);
     -moz-transform:scale(0.8);
     -o-transform:scale(0.8);
@@ -18,6 +17,15 @@
     background-size: contain;
     position:relative;
     background-repeat: no-repeat;
+}
+
+.fondo2{
+    width:auto;
+    height:100%;
+    background-image:url('/static/img/fondo2.jpg');
+    background-size: contain;
+    position:relative;
+    background-repeat: no-repeat fixed center;
 }
 
 #caja-intendente{
@@ -66,4 +74,8 @@ div.noticias div h1{
 
 }
 
+.cuadro:hover {
+    transform: translateY(-10px);
+    -webkit-transition: all 500ms;
 
+}
