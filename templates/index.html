@@ -164,12 +164,16 @@
   </div>
 
 
-  <section class="py-5 bg-image-full mw-10" style="height:auto;">
-    <div align="right" class="justify-content-right" style="padding-right:15px;">
-    <div class="fb-post" data-href="https://www.facebook.com/Fiambala2019/posts/1049877555345872" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/Fiambala2019/posts/1049877555345872" class="fb-xfbml-parse-ignore"><p>En las Termas se viven las vacaciones!!!
+  <section class="py-5 d-block align-items-center" style="height:auto; display:inline-block">
+      <div class="align-items-center" style="padding-right:20px; padding-left:20px; display:inline-block">
+          <div class="fb-post" data-href="https://www.facebook.com/Fiambala2019/posts/1049877555345872" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/Fiambala2019/posts/1049877555345872" class="fb-xfbml-parse-ignore"><p>En las Termas se viven las vacaciones!!!
 
-    En la jornada de hoy el equipo de la Secretaría de Turismo de la Municipalidad...</p>Publicado por <a href="https://www.facebook.com/Fiambala2019/">Municipalidad de Fiambala oficial</a> en&nbsp;<a href="https://developers.facebook.com/Fiambala2019/posts/1049877555345872">Jueves, 23 de enero de 2020</a></blockquote></div>
-    </div>
+      En la jornada de hoy el equipo de la Secretaría de Turismo de la Municipalidad...</p>Publicado por <a href="https://www.facebook.com/Fiambala2019/">Municipalidad de Fiambala oficial</a> en&nbsp;<a href="https://developers.facebook.com/Fiambala2019/posts/1049877555345872">Jueves, 23 de enero de 2020</a></blockquote></div>
+
+      </div>
+         <div id="map" class="align-items-center"></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
   </section>
 
   <section class="py-5 bg-image-full mw-100 fondo1 aparece" style="height:350px;">
@@ -183,20 +187,5 @@
 {%endblock%}
 
 {%block js%}
-<script>
-  $(document).ready(function(){
-  $('.carousel').carousel({
-    interval: 2000
-  });
-});
-</script>
-
-	<script>
-		  $(document).ready(function(){
-			$('.ser').mouseover(function(){
-			  $('.cua').animate({top:'+=15px'});
-			  });
-			});
-	</script>
 
 {%endblock%}

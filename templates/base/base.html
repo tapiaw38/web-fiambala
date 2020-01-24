@@ -10,25 +10,10 @@
 	<script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/popper.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
-
-	<script>
-		  $(document).ready(function(){
-			$('.ecirculo').hide().fadeIn(600);
-		  });
-	</script>
 	<script src="{{ url_for('static', filename = 'js/animaciones.js') }}"></script>
-
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
 	<title>{% block title %}Municipalidad de FIambala{% endblock %}</title>
-	<style>
-		#body{
 
-				background: #d3cce3; /* fallback for old browsers */
-  				background: -webkit-linear-gradient(to right, #d3cce3, #e9e4f0); /* Chrome 10-25, Safari 5.1-6 */
-  				background: linear-gradient(to right, #d3cce3, #e9e4f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-		}
-
-	</style>
 </head>
 
 <body>
