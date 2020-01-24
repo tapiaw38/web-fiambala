@@ -79,3 +79,8 @@ div.noticias div h1{
     -webkit-transition: all 500ms;
 
 }
+
+.aparece{
+    opacity:0;
+    transition: all 0.5s;
+}

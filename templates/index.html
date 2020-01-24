@@ -3,11 +3,16 @@
 
 
 {%block content%}
+<!-- facebook -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v5.0"></script>
+
 
     <div class="inner">
       <h3 class="masthead-brand"></h3>
       <nav class="nav nav-masthead justify-content-left">
-        <a class="nav-link" href="{{ url_for('contacto') }}" style="font-size:15px">Envianos un mensaje</a>
+        <a class="nav-link text-primary" href="{{ url_for('contacto') }}" style="font-size:15px">Envianos un mensaje</a>
+        <a class="nav-link text-primary" href="#" style="font-size:15px">¿Como llegar?</a>
       </nav>
     </div>
 
@@ -44,13 +49,28 @@
 
 <!-- botones -->
 <br>
-<a class="navbar-brand" href="">
-  <img class="boton-circulo ecirculo" src="{{ url_for('static', filename = 'img/b-municipio.png') }}" width="150" height="150" class="d-inline-block">
-</a>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <a class="navbar-brand" href="">
+    <img class="boton-circulo ecirculo" src="{{ url_for('static', filename = 'img/b-municipio.png') }}" width="150" height="150" class="d-inline-block">
+  </a>
 
-<a class="navbar-brand" href="">
-  <img class="boton-circulo ecirculo" src="{{ url_for('static', filename = 'img/b-termas.png') }}" width="150" height="150" class="d-inline-block">
-</a>
+  <a class="navbar-brand" href="">
+    <img class="boton-circulo ecirculo" src="{{ url_for('static', filename = 'img/b-termas.png') }}" width="150" height="150" class="d-inline-block">
+  </a>
+
+    <a class="navbar-brand" href="">
+    <img class="boton-circulo ecirculo" src="{{ url_for('static', filename = 'img/b-festival.png') }}" width="150" height="150" class="d-inline-block">
+  </a>
+
+    <a class="navbar-brand" href="">
+    <img class="boton-circulo ecirculo" src="{{ url_for('static', filename = 'img/b-hotel.png') }}" width="150" height="150" class="d-inline-block">
+  </a>
+
+      <a class="navbar-brand" href="">
+    <img class="boton-circulo ecirculo" src="{{ url_for('static', filename = 'img/b-vinos.png') }}" width="150" height="150" class="d-inline-block">
+  </a>
+</div>
+
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">Servicios Municipales</h1>
@@ -58,14 +78,14 @@
 </div>
 
 
-  <div align="center" class="album py-5 bg-light ecirculo fondo2">
+  <div align="center" class="album py-5 bg-light fondo2 aparece">
       <div class="container">
         <div class="row">
           <div class="col-md-4 cuadro">
             <div class="card mb-4 shadow-sm">
               <div class="card-body">
-                <h5 class="card-text">Servicios</h5>
-                <p>Conozca mas de nuestros servicios</p>
+                <h5 class="card-text text-primary">Audiencia Publica</h5>
+                <p>Turnos online</p>
                 <div class="align-items-center">
                   <div align="center" class="align-items-center">
                     <a type="button" class="btn btn-outline-primary">Ver más</a>
@@ -77,11 +97,11 @@
           <div class="col-md-4 cuadro">
             <div class="card mb-4 shadow-sm">
               <div class="card-body">
-                <h5 class="card-text">Servicios</h5>
+                <h5 class="card-text text-success">Servicios</h5>
                 <p>Conozca mas de nuestros servicios</p>
                 <div class="align-items-center">
                   <div align="center" class="align-items-center">
-                    <a type="button" class="btn btn-outline-primary">Ver más</a>
+                    <a type="button" class="btn btn-outline-success">Ver más</a>
                   </div>
                 </div>
               </div>
@@ -90,11 +110,11 @@
           <div class="col-md-4 cuadro">
             <div class="card mb-4 shadow-sm">
               <div class="card-body">
-                <h5 class="card-text">Servicios</h5>
+                <h5 class="card-text text-warning">Servicios</h5>
                 <p>Conozca mas de nuestros servicios</p>
                 <div class="align-items-center">
                   <div align="center" class="align-items-center">
-                    <a type="button" class="btn btn-outline-primary">Ver más</a>
+                    <a type="button" class="btn btn-outline-warning">Ver más</a>
                   </div>
                 </div>
               </div>
@@ -144,13 +164,15 @@
   </div>
 
 
-  <section class="py-5 bg-image-full mw-100" style="height:350px;">
-    <div align="center" class="align-items-center">
+  <section class="py-5 bg-image-full mw-10" style="height:auto;">
+    <div align="right" class="justify-content-right" style="padding-right:15px;">
+    <div class="fb-post" data-href="https://www.facebook.com/Fiambala2019/posts/1049877555345872" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/Fiambala2019/posts/1049877555345872" class="fb-xfbml-parse-ignore"><p>En las Termas se viven las vacaciones!!!
 
+    En la jornada de hoy el equipo de la Secretaría de Turismo de la Municipalidad...</p>Publicado por <a href="https://www.facebook.com/Fiambala2019/">Municipalidad de Fiambala oficial</a> en&nbsp;<a href="https://developers.facebook.com/Fiambala2019/posts/1049877555345872">Jueves, 23 de enero de 2020</a></blockquote></div>
     </div>
   </section>
 
-  <section class="py-5 bg-image-full mw-100 fondo1" style="height:350px;">
+  <section class="py-5 bg-image-full mw-100 fondo1 aparece" style="height:350px;">
     <div align="center" class="align-items-center">
       <h1> Visitá Fiambala</h1>
       <a class="btn btn-outline-primary">Más Portadas</a>

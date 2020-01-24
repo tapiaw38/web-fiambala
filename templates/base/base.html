@@ -10,12 +10,13 @@
 	<script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/popper.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+
 	<script>
 		  $(document).ready(function(){
 			$('.ecirculo').hide().fadeIn(600);
 		  });
 	</script>
-
+	<script src="{{ url_for('static', filename = 'js/animaciones.js') }}"></script>
 
 	<title>{% block title %}Municipalidad de FIambala{% endblock %}</title>
 	<style>
