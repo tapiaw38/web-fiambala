@@ -7,12 +7,18 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v5.0"></script>
 
-
     <div class="inner">
       <h3 class="masthead-brand"></h3>
       <nav class="nav nav-masthead justify-content-left">
-        <a class="nav-link text-primary" href="{{ url_for('contacto') }}" style="font-size:15px">Envianos un mensaje</a>
-        <a class="nav-link text-primary" href="#" style="font-size:15px">¿Como llegar?</a>
+        <a class="nav-link text-dark" href="{{ url_for('contacto') }}" style="font-size:15px">
+          <img src="{{ url_for('static', filename = 'img/mensaje.svg') }}" width="30" height="30">
+          Contacto</a>
+        <a class="nav-link text-dark" href="{{ url_for('mapa') }}" style="font-size:15px">
+          <img src="{{ url_for('static', filename = 'img/ubicacion.svg') }}" width="30" height="30">
+          Ubicación</a>
+        <a class="nav-link text-dark" href="{{ url_for('mapa') }}" style="font-size:15px">
+          <img src="{{ url_for('static', filename = 'img/celular.svg') }}" width="30" height="30">
+          Mi Guia</a>
       </nav>
     </div>
 
@@ -163,16 +169,42 @@
       </div>
   </div>
 
-  <section class="py-5 d-block align-items-center" style="height:auto; display:inline-block">
-      <div class="align-items-center" style="padding-right:20px; padding-left:20px; display:inline-block">
-          <div class="fb-post" data-href="https://www.facebook.com/Fiambala2019/posts/1049877555345872" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/Fiambala2019/posts/1049877555345872" class="fb-xfbml-parse-ignore"><p>En las Termas se viven las vacaciones!!!
-
-      En la jornada de hoy el equipo de la Secretaría de Turismo de la Municipalidad...</p>Publicado por <a href="https://www.facebook.com/Fiambala2019/">Municipalidad de Fiambala oficial</a> en&nbsp;<a href="https://developers.facebook.com/Fiambala2019/posts/1049877555345872">Jueves, 23 de enero de 2020</a></blockquote></div>
+  <section class="py-5 d-block" style="height:auto; display:inline-block">
+    <div class="container">
+      <div align="center" style="width:50%;display:inline-block">
+          <div class="noticias">
+            <div>
+              <a><img src="{{ url_for('static', filename = 'img/noticias.jpg') }}"></a>
+              <div class="desc">
+                <h1 class="lead">Titulo de Noticia</h1>
+                <p>
+                  Esta es una noticia de la municipalidad de Fiambala
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="noticias">
+            <div>
+              <a><img src="{{ url_for('static', filename = 'img/noticias.jpg') }}"></a>
+              <div class="desc">
+                <h1 class="lead">Titulo de Noticia</h1>
+                <p>
+                  Esta es una noticia de la municipalidad de Fiambala
+                </p>
+              </div>
+            </div>
+          </div>
+        <div>
+          <a class="btn btn-outline-primary">Ver más</a>
+        </div>
 
       </div>
-         <div id="map" class="align-items-center"></div>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-
+      <!-- integracion de facebook -->
+      <div align="center" style="display:inline-block">
+          <div align="center" class="fb-post" data-href="https://www.facebook.com/Fiambala2019/posts/1049877555345872" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/Fiambala2019/posts/1049877555345872" class="fb-xfbml-parse-ignore"><p>En las Termas se viven las vacaciones!!!
+      En la jornada de hoy el equipo de la Secretaría de Turismo de la Municipalidad...</p>Publicado por <a href="https://www.facebook.com/Fiambala2019/">Municipalidad de Fiambala oficial</a> en&nbsp;<a href="https://developers.facebook.com/Fiambala2019/posts/1049877555345872">Jueves, 23 de enero de 2020</a></blockquote></div>
+      </div>
+    </div>
   </section>
 
   <section class="py-5 bg-image-full mw-100 fondo1 aparece" style="height:350px;">

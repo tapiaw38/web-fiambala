@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+
+
+
+{%block content%}
+
+<div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename = 'img/ubicacion.svg') }}" alt="" width="72" height="72">
+    <h2>Ubicación</h2>
+    <p class="lead">Fiambalá es una localidad del Departamento Tinogasta en el oeste de la provincia argentina de
+      Catamarca, y es la última ciudad que alberga la RN 60 antes de adentrarse camino a la República de Chile..</p>
+      <div id="map" align="center"></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+  </div>
+</div>
+
+{%endblock%}

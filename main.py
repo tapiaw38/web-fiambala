@@ -29,10 +29,10 @@ mail = Mail()
 def inicio():
     return render_template('index.html')
 
-#---ruta cursos informatica---
-@app.route('/curso_infor')
-def curso_infor():
-    return render_template('cursos_infor/cursos_informatica.html')
+#---ruta mapa---
+@app.route('/mapa')
+def mapa():
+    return render_template('mapa.html')
 
 @app.route('/linux_basico')
 def linux_basico():
