@@ -43,24 +43,24 @@
 }
 
 div.noticias{
+    width:80%;
     display: inline-block;
     justify-content:center;
     justify-content:space-around;
     flex-wrap: wrap;
     align-items: center;
-    margin-top:50px;
-    margin-bottom:50px;
+    margin-top:20px;
+    margin-bottom:20px;
     margin-left:20px;
     margin-right:20px;
 }
 
 div.noticias div{
-    width:300px;
+    width:auto;
 }
 
 div.noticias div div.desc{
     background-color:#ffffff;
-    padding:10px;
 }
 
 div.noticias div img{
@@ -82,7 +82,9 @@ div.noticias div h1{
     -webkit-transition: all 500ms;
 
 }
-
+.border{
+    border-radius:10px;
+}
 .aparece{
     opacity:0;
     transition: all 0.5s;
@@ -102,6 +104,7 @@ div.noticias div h1{
    border-radius:5px;
    background:#a6ffce;
    filter:invert(100%);
+   padding:3px;
 }
 input[type="search"]{
     width: 60px; /*ancho por defecto*/
@@ -111,6 +114,7 @@ input[type="search"]{
     -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
     transition: all .5s; /* transición de .5seg a todos los elementos*/
     outline: none; /* ocultar el fucos automático de los input */
+    position: inline-block
 }
 input[type="search"]:focus{
     width: 200px; /*tamaño del boton buscar al hacer click*/

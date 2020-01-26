@@ -19,10 +19,41 @@
 <body>
 	{% block nav%}
 	<!-----------barra de navegacion------------>
+	<!-- contenido collapse -->
+	<div class="pos-f-t">
+	<div class="collapse" id="navbarToggleExternalContent">
+		<div class="bg-dark p-4">
+			<ul class="navbar-nav text-light">
+				<li class="nav-item">
+					<h5>Servicios</h5>
+					<a class="nav-link text-white" href="#">Action</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav text-light">
+				<li class="nav-item">
+					<h5>Municipio</h5>
+					<a class="nav-link text-white" href="#">Action</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav text-light">
+				<li class="nav-item">
+					<h5>Noticias</h5>
+					<a class="nav-link text-white" href="#">Action</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav text-light">
+				<li class="nav-item">
+					<h5>Turismo</h5>
+					<a class="nav-link text-white" href="#">Action</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<!-- end collapse -->
 	<nav class="navbar navbar-expand-lg navbar-dark sticky-top scrolling-navbar" style="background-color: #590031; height:80px" >
 		<img src="{{ url_for('static', filename = 'img/fiambala.png') }}" width="40" height="40" class="d-inline-block align-left">
 
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
 
@@ -78,18 +109,22 @@
   			</li>
 		</ul>
 	  </div>
+		<div class="collapse navbar-collapse justify-content-md-end">
 		<a class="navbar-brand" href="https://www.facebook.com/municipalidad.tinogasta">
 			<img src="{{ url_for('static', filename = 'img/facebook.svg') }}" width="25" height="25" class="d-inline-block icon-nav">
 		</a>
 		<a class="navbar-brand" style="font-size:15px">
 			<img src="{{ url_for('static', filename = 'img/telefono.svg') }}" width="25" height="25" class="d-inline-block icon-nav"> Tel. +54-3837-432344
 		</a>
-	   <form action="">
+		</div>
+		<form action="">
 			<input id="barraBusca" type="search" name="nombre" placeholder="Buscar">
-		   <img id="botonBusca" src="{{ url_for('static', filename = 'img/search.svg') }}" width="25" height="25" class="d-inline-block icon-nav">
+			<a class="navbar-brand" href="#">
+				<img src="{{ url_for('static', filename = 'img/search.svg') }}" width="25" height="25" class="d-inline-block icon-nav">
+			</a>
 		</form>
-
 	</nav>
+		</div>
 
 	{% with messages = get_flashed_messages() %}
 		{% if messages %}
