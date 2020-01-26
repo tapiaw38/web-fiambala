@@ -12,14 +12,14 @@
     <script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
 	<script src="{{ url_for('static', filename = 'js/animaciones.js') }}"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-	<title>{% block title %}Municipalidad de FIambala{% endblock %}</title>
+	<title>{% block title %}Municipalidad de Fiambala{% endblock %}</title>
 
 </head>
 
 <body>
 	{% block nav%}
 	<!-----------barra de navegacion------------>
-	<nav class="navbar navbar-expand-lg navbar-dark sticky-top scrolling-navbar" style="background-color: #b136c7; height:80px" >
+	<nav class="navbar navbar-expand-lg navbar-dark sticky-top scrolling-navbar" style="background-color: #590031; height:80px" >
 		<img src="{{ url_for('static', filename = 'img/fiambala.png') }}" width="40" height="40" class="d-inline-block align-left">
 
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,10 +32,12 @@
 			<a class="nav-link" href="#">Municipalidad de Fiambala</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="{{ url_for('inicio') }}">Home</a>
+			<a class="nav-link" href="{{ url_for('inicio') }}">
+				<img src="{{ url_for('static', filename = 'img/home.svg') }}" width="25" height="25" class="d-inline-block icon-nav">
+			</a>
 		  </li>
 			<li class="nav-item dropdown">
-    			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ciudad</a>
+    			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
     				<div class="dropdown-menu" style="opacity:0.9;">
       					<a class="dropdown-item" href="#">Action</a>
       					<a class="dropdown-item" href="#">Another action</a>
@@ -45,10 +47,10 @@
     				</div>
   			</li>
 			<li class="nav-item dropdown">
-    			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Gobierno</a>
+    			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Municipio</a>
     				<div class="dropdown-menu" style="opacity:0.9;">
 						<a class="dropdown-item" href="#">Intendente</a>
-      					<a class="dropdown-item" href="#">Another action</a>
+      					<a class="dropdown-item" href="#">Organigrama</a>
       					<a class="dropdown-item" href="#">Something else here</a>
       					<div class="dropdown-divider"></div>
       					<a class="dropdown-item" href="#">Separated link</a>
@@ -65,10 +67,10 @@
     				</div>
   			</li>
 			<li class="nav-item dropdown">
-    			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Eventos</a>
+    			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Turismo</a>
     				<div class="dropdown-menu" style="opacity:0.9;">
-      					<a class="dropdown-item" href="#" >Informatica y Programacion</a>
-      					<a class="dropdown-item" href="#">Dibujo y Diseño Tecnico</a>
+      					<a class="dropdown-item" href="#" >Action</a>
+      					<a class="dropdown-item" href="#">Another action</a>
       					<a class="dropdown-item" href="#">Something else here</a>
       					<div class="dropdown-divider"></div>
       					<a class="dropdown-item" href="#">Separated link</a>
@@ -77,11 +79,16 @@
 		</ul>
 	  </div>
 		<a class="navbar-brand" href="https://www.facebook.com/municipalidad.tinogasta">
-			<img src="{{ url_for('static', filename = 'img/facebook.png') }}" width="25" height="25" class="d-inline-block">
+			<img src="{{ url_for('static', filename = 'img/facebook.svg') }}" width="25" height="25" class="d-inline-block icon-nav">
 		</a>
 		<a class="navbar-brand" style="font-size:15px">
-			<img src="{{ url_for('static', filename = 'img/tel.png') }}" width="35" height="35" class="d-inline-block">Tel. +54-3837-432344
+			<img src="{{ url_for('static', filename = 'img/telefono.svg') }}" width="25" height="25" class="d-inline-block icon-nav"> Tel. +54-3837-432344
 		</a>
+	   <form action="">
+			<input id="barraBusca" type="search" name="nombre" placeholder="Buscar">
+		   <img id="botonBusca" src="{{ url_for('static', filename = 'img/search.svg') }}" width="25" height="25" class="d-inline-block icon-nav">
+		</form>
+
 	</nav>
 
 	{% with messages = get_flashed_messages() %}

@@ -4,10 +4,13 @@
 }
 
 .boton-circulo:hover{
-    -ms-transform:scale(0.8);
-    -moz-transform:scale(0.8);
-    -o-transform:scale(0.8);
+    transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
     -webkit-transition: all 500ms;
+
 }
 
 .fondo1{
@@ -90,3 +93,29 @@ div.noticias div h1{
     width:50%;
     display:inline-block;
 }
+
+.icon-nav:hover{
+    filter:invert(100%);
+}
+
+.icon-miga{
+   border-radius:5px;
+   background:#a6ffce;
+   filter:invert(100%);
+}
+input[type="search"]{
+    width: 60px; /*ancho por defecto*/
+    border-radius: 5px;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+}
+input[type="search"]:focus{
+    width: 200px; /*tamaño del boton buscar al hacer click*/
+    padding-left: 5px; /*espacio entre el icono lupa y el placeholder*/
+    color: #000;
+    background-color: #FFF;
+}
+
