@@ -19,8 +19,6 @@
         <a class="nav-link text-dark" href="{{ url_for('mapa') }}" style="font-size:15px">
           <img class="icon-miga" src="{{ url_for('static', filename = 'img/celular.svg') }}" width="30" height="30">
           Mi Guia</a>
-
-
       </nav>
     </div>
 
@@ -171,9 +169,23 @@
       </div>
   </div>
 
-  <section class="py-5 d-block" style="height:auto; display:inline-block">
-    <div class="container">
-      <div align="center" style="width:50%;display:inline-block">
+   <div align="center" class="album py-5 bg-light aparece">
+      <div class="container">
+          <div align="center" style="width:50%;display:inline-block">
+            <h4 class="display-4">Noticias Recientes<hr width="80%" size="10" /></h4>
+            <!-- noticia 1 -->
+            <div class="noticias">
+              <div>
+                <a><img src="{{ url_for('static', filename = 'img/noticias.jpg') }}"></a>
+                <div class="desc">
+                  <h1 class="lead">Titulo de Noticia</h1>
+                  <p>
+                    Esta es una noticia de la municipalidad de Fiambala
+                </p>
+              </div>
+            </div>
+          </div>
+            <!-- noticia 2 -->
           <div class="noticias">
             <div>
               <a><img src="{{ url_for('static', filename = 'img/noticias.jpg') }}"></a>
@@ -185,27 +197,17 @@
               </div>
             </div>
           </div>
-          <div class="noticias">
-            <div>
-              <a><img src="{{ url_for('static', filename = 'img/noticias.jpg') }}"></a>
-              <div class="desc">
-                <h1 class="lead">Titulo de Noticia</h1>
-                <p>
-                  Esta es una noticia de la municipalidad de Fiambala
-                </p>
-              </div>
-            </div>
-          </div>
-
-      </div>
+            <!-- fin noticia -->
+        </div>
       <!-- integracion de facebook -->
       <div align="center" style="display:inline-block">
           <div align="center" class="fb-post" data-href="https://www.facebook.com/Fiambala2019/posts/1049877555345872" data-width="500" data-show-text="true"><blockquote cite="https://developers.facebook.com/Fiambala2019/posts/1049877555345872" class="fb-xfbml-parse-ignore"><p>En las Termas se viven las vacaciones!!!
       En la jornada de hoy el equipo de la Secretaría de Turismo de la Municipalidad...</p>Publicado por <a href="https://www.facebook.com/Fiambala2019/">Municipalidad de Fiambala oficial</a> en&nbsp;<a href="https://developers.facebook.com/Fiambala2019/posts/1049877555345872">Jueves, 23 de enero de 2020</a></blockquote></div>
       </div>
     </div>
-  </section>
+  </div>
 
+  <br>
   <section class="py-5 bg-image-full mw-100 fondo1 aparece" style="height:350px;">
     <div align="center" class="align-items-center">
       <h1> Visitá Fiambala</h1>
