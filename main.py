@@ -46,6 +46,7 @@ def contacto():
     contacto = forms.ComentarioForm(request.form)
     if request.method == 'POST' and contacto.validate():
         mensaje = Consulta(usuario = contacto.usuario.data,
+                           tel =contacto.tel.data,
                              email = contacto.email.data,
                             comentario = contacto.comentario.data)
         db.session.add(mensaje)
